@@ -1,0 +1,39 @@
+[class^="button-"] {
+  padding: 0 8px;
+  border-radius: 50px;
+  transition: all 0.25s;
+  text-transform: uppercase;
+  display: inline-flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  min-width: 132px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.button-light-outline {
+  color: var(--color-white);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid var(--color-white);
+  background-color: transparent;
+  &:hover {
+    background: rgba(#fff, 0.1);
+  }
+}
+.btn-light {
+  background: var(--color-light);
+  color: var(--color-accent);
+  border: 2px solid transparent;
+  &:hover {
+    border: 2px solid var(--color-accent);
+  }
+}
+
+.button-lg {
+  font-size: 15px;
+  padding: 13px 2rem 10px;
+}

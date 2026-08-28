@@ -1,0 +1,23 @@
+<div class="mb-lg-16 mb-12">
+  <div class="container">
+    <h3 class="h3 mb-lg-8 mb-6">FOTOGALERIE</h3>
+    <div class="row g-6">
+      {% for i in 1..6 %}
+      <div class="col-lg-3 col-sm-4 col-6">
+        <a
+          data-source="/slavia-basketbal/build/ajax-gallery.json"
+          data-gallery-id="1"
+          href="#"
+          class="galleryItem"
+        >
+          <img
+            srcset="https://picsum.photos/264/148"
+            loading="lazy"
+            alt="article"
+          />
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

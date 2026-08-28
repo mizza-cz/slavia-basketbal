@@ -1,0 +1,37 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 0;
+  margin-bottom: 24px;
+}
+.breadcrumb-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-dark);
+  a {
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: var(--color-dark);
+    }
+  }
+  &:not(:last-child) {
+    padding-right: 14px;
+    margin-right: 14px;
+  }
+  &:not(:last-child)::before {
+    content: "";
+    height: 1rem;
+    background-color: var(--color-dark);
+    width: 1px;
+    font-size: 0;
+    position: absolute;
+    right: 0;
+  }
+  &.active {
+    font-weight: 700;
+  }
+}

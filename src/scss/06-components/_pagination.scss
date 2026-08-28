@@ -1,0 +1,48 @@
+.page-item.disabled {
+  opacity: 0.3;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.page-item .page-link {
+  padding: 0;
+  margin: 0;
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+.page-item.active .page-link {
+  font-weight: 700;
+  color: var(--color-primary);
+  background-color: transparent;
+}
+.page-link--prev,
+.page-link--next {
+  width: 32px;
+  height: 32px;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+  @include media-breakpoint-down(md) {
+    width: 24px;
+    height: 24px;
+  }
+}
+.page-link--prev {
+  margin-right: 24px !important;
+  @include media-breakpoint-down(md) {
+    margin-right: 0 !important;
+  }
+}
+.page-link--next {
+  margin-left: 24px !important;
+  @include media-breakpoint-down(md) {
+    margin-left: 0 !important;
+  }
+}

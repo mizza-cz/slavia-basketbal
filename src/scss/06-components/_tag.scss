@@ -1,0 +1,14 @@
+.tag {
+  display: flex;
+  width: fit-content;
+  padding: 9px 16px 8px;
+  border-radius: 40px;
+  background-color: var(--color-primary);
+  font-size: 13px;
+  line-height: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-white);
+  min-width: 84px;
+  justify-content: center;
+}

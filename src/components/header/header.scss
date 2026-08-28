@@ -1,0 +1,37 @@
+.header {
+  padding: 1rem 0;
+  position: relative;
+  z-index: 999;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__menu-btn {
+    width: 42px;
+    height: 32px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    span {
+      width: 42px;
+      height: 4px;
+      display: block;
+      background: var(--color-white);
+    }
+  }
+  &__logo {
+    display: block;
+    position: relative;
+    z-index: 999;
+    transition: transform 0.25s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

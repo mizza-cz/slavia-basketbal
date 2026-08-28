@@ -1,0 +1,36 @@
+/*! purgecss start ignore */
+.container-full {
+  max-width: 1880px !important;
+  width: 100%;
+  margin-inline: auto;
+  padding: 0 20px;
+}
+.container {
+  max-width: 77.75rem !important;
+  width: 100% !important;
+  padding: 0 20px;
+  margin-inline: auto;
+}
+// .container-xl {
+//   max-width: 1400px !important;
+//   margin-inline: auto;
+//   width: 100%;
+//   padding: 0 20px;
+// }
+.container-xs {
+  max-width: 47rem !important;
+  margin-inline: auto;
+  padding: 0 20px;
+}
+.text-white {
+  color: var(--color-white) !important;
+}
+a.hover-outline,
+.hover-outline a {
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
+
+/*! purgecss end ignore */

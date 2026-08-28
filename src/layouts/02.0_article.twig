@@ -1,0 +1,35 @@
+{% extends "@components/base/base.twig" %} {% set title = "02.0_article" %} {%
+block main %}
+<div class="bg-subpage">{% include "@components/header/header.twig" %}</div>
+
+<main class="main" aria-label="Hlavní obsah">
+  <div class="mt-4">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">
+              <img
+                class="object-fit-contain"
+                width="20"
+                height="19"
+                src="images/ico/logo-primary.svg"
+                alt="home"
+              />
+            </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Články</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Vládci Prahy: Slavia ovládla derby
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  {% include "@components/article-section/article-section.twig" %} {% include
+  "@components/partners/partners.twig" %}
+</main>
+
+{% endblock %}
