@@ -1,10 +1,10 @@
-{% extends "@components/base/base.twig" %} {% set title = "03.0_archive" %} {%
-block main %}
+{% extends "@components/base/base.twig" %} {% set title = "06.0_photogallery" %}
+{% block main %}
 <div class="bg-subpage">
   {% include "@components/header/header.twig" %}
   <div class="pt-12 pb-lg-8 pb-6">
     <div class="container-full">
-      <h1 class="h1 text-white">ARCHIV ČLÁNKŮ</h1>
+      <h1 class="h1 text-white">Fotogalerie</h1>
     </div>
   </div>
 </div>
@@ -26,7 +26,9 @@ block main %}
             </a>
           </li>
 
-          <li class="breadcrumb-item active" aria-current="page">Články</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Fotogalerie
+          </li>
         </ol>
       </nav>
 
@@ -34,28 +36,15 @@ block main %}
         <div
           class="d-flex align-items-center justify-content-between flex-wrap gap-6"
         >
-          <div class="d-flex align-items-center gap-lg-8 gap-6 flex-wrap">
-            <div
-              class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100"
-            >
-              <label for="month">Měsíc:</label>
-              <select class="js-select" name="month" id="month">
-                <option value="1">Leden</option>
-                <option value="1">Leden</option>
-                <option value="1">Leden</option>
-              </select>
-            </div>
-            <div
-              class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100"
-            >
-              <label for="category">Kategorie:</label>
-              <select class="js-select" name="category" id="category">
-                <option value="1">Zápasy</option>
-                <option value="1">Kategorie 1</option>
-                <option value="1">Kategorie 1</option>
-                <option value="1">Kategorie 1</option>
-              </select>
-            </div>
+          <div
+            class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100"
+          >
+            <label for="month">Měsíc:</label>
+            <select class="js-select" name="month" id="month">
+              <option value="1">Leden</option>
+              <option value="1">Leden</option>
+              <option value="1">Leden</option>
+            </select>
           </div>
           <div
             class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100"
@@ -76,7 +65,7 @@ block main %}
         </div>
       </form>
 
-      {% include "@components/archive-section/archive-section.twig" %}
+      {% include "@components/photogallery-section/photogallery-section.twig" %}
       <nav class="pagination-wrap" aria-label="Navigace stránek">
         <ul class="pagination">
           <li class="page-item disabled">

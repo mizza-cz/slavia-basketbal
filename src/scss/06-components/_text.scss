@@ -10,12 +10,18 @@
 .h1 {
   font-size: 50px;
   line-height: 1.1;
+  @include media-breakpoint-down(lg) {
+    font-size: 40px;
+  }
 }
 .h2,
 .o-content h1 {
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.01em;
+  @include media-breakpoint-down(lg) {
+    font-size: 28px;
+  }
 }
 .h3,
 .o-content h2 {
@@ -23,8 +29,16 @@
   line-height: 1.1;
 }
 .h4 {
+  font-size: 20px;
+  line-height: 1.1;
 }
 .h5 {
+  font-size: 18px;
+  line-height: 1.1;
+}
+.h6 {
+  font-size: 16px;
+  line-height: 1.1;
 }
 
 .text-xxl {

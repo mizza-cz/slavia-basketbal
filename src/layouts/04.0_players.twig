@@ -1,0 +1,56 @@
+{% extends "@components/base/base.twig" %} {% set title = "04.0_players" %} {%
+block main %}
+<div class="bg-subpage">
+  {% include "@components/header/header.twig" %}
+  <div class="pt-12 pb-lg-8 pb-6">
+    <div class="container-full">
+      <h1 class="h1 text-white">SOUPISKA A-TÝM 2026/27</h1>
+    </div>
+  </div>
+</div>
+
+<main class="main" aria-label="Hlavní obsah">
+  <div class="mt-4 mb-lg-15 mb-10">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">
+              <img
+                class="object-fit-contain"
+                width="20"
+                height="19"
+                src="images/ico/logo-primary.svg"
+                alt="home"
+              />
+            </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">A-Tým</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Soupiska</li>
+        </ol>
+      </nav>
+
+      <div class="menuTabs mb-12">
+        <ul class="nav nav-tabs">
+          <li>
+            <a class="active px-md-12 px-6" href="#players" data-toggle="tab">
+              Hráči
+            </a>
+          </li>
+          <li>
+            <a class="px-mb-12 px-6" href="#staff" data-toggle="tab"
+              >Realizační tým</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      {% include "@components/players-section/players-section.twig" %}
+    </div>
+  </div>
+  {% include "@components/partners/partners.twig" %}
+</main>
+
+{% endblock %}

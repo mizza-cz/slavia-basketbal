@@ -1,0 +1,25 @@
+<div class="row g-5 mb-lg-18 mb-10">
+  {% for i in 1..9 %}
+  <div class="col-lg-4 col-sm-6">
+    <a
+      data-source="/slavia-basketbal/build/ajax-gallery.json"
+      data-gallery-id="1"
+      class="post"
+    >
+      <img
+        class="post__img"
+        srcset="https://picsum.photos/364/320"
+        alt="article"
+        loading="lazy"
+      />
+      <div class="tag">klub</div>
+      <div class="post__content">
+        <div class="text-xxl fw-bold mb-2">
+          Lorem ipsum dolor sit amet consectetuer
+        </div>
+        <time class="text-md" datetime="2026-09-18">18.9.2026</time>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>

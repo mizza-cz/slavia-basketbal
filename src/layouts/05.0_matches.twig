@@ -1,10 +1,10 @@
-{% extends "@components/base/base.twig" %} {% set title = "03.0_archive" %} {%
+{% extends "@components/base/base.twig" %} {% set title = "05.0_matches" %} {%
 block main %}
 <div class="bg-subpage">
   {% include "@components/header/header.twig" %}
   <div class="pt-12 pb-lg-8 pb-6">
     <div class="container-full">
-      <h1 class="h1 text-white">ARCHIV ČLÁNKŮ</h1>
+      <h1 class="h1 text-white">ZÁPASY A-TÝM 2026/27</h1>
     </div>
   </div>
 </div>
@@ -26,55 +26,40 @@ block main %}
             </a>
           </li>
 
-          <li class="breadcrumb-item active" aria-current="page">Články</li>
+          <li class="breadcrumb-item active" aria-current="page">| Zápasy</li>
         </ol>
       </nav>
 
-      <form action="" class="filterMenu">
+      <div class="menuTabs">
+        <ul class="nav nav-tabs">
+          <li>
+            <a class="active" href="#allGames"> Vše </a>
+          </li>
+          <li>
+            <a class=" " href="#beforeGames">Nadcházející</a>
+          </li>
+          <li>
+            <a class=" " href="#afterGames">Odehrané</a>
+          </li>
+          <li>
+            <a class=" " href="#homeGames">Doma </a>
+          </li>
+          <li>
+            <a href="#outsideGames">Venku </a>
+          </li>
+        </ul>
         <div
-          class="d-flex align-items-center justify-content-between flex-wrap gap-6"
+          class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100"
         >
-          <div class="d-flex align-items-center gap-lg-8 gap-6 flex-wrap">
-            <div
-              class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100"
-            >
-              <label for="month">Měsíc:</label>
-              <select class="js-select" name="month" id="month">
-                <option value="1">Leden</option>
-                <option value="1">Leden</option>
-                <option value="1">Leden</option>
-              </select>
-            </div>
-            <div
-              class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100"
-            >
-              <label for="category">Kategorie:</label>
-              <select class="js-select" name="category" id="category">
-                <option value="1">Zápasy</option>
-                <option value="1">Kategorie 1</option>
-                <option value="1">Kategorie 1</option>
-                <option value="1">Kategorie 1</option>
-              </select>
-            </div>
-          </div>
-          <div
-            class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100"
-          >
-            <label for="searchInput">Hledat:</label>
-            <div class="filterMenu__input">
-              <input type="search" name="searchInput" id="searchInput" />
-              <button type="submit" class="filterMenu__input-btn">
-                <img
-                  src="images/ico/search.svg"
-                  alt="ico"
-                  width="24"
-                  height="24"
-                />
-              </button>
-            </div>
-          </div>
+          <select class="js-select" name="category" id="category">
+            <option value="1">NBL 2026/27</option>
+            <option value="1">NBL 2026/27</option>
+            <option value="1">NBL 2026/27</option>
+            <option value="1">NBL 2026/27</option>
+            <option value="1">NBL 2026/27</option>
+          </select>
         </div>
-      </form>
+      </div>
 
       {% include "@components/archive-section/archive-section.twig" %}
       <nav class="pagination-wrap" aria-label="Navigace stránek">

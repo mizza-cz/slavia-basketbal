@@ -4,6 +4,9 @@
   width: 100%;
   position: relative;
   margin-bottom: 40px;
+  @include media-breakpoint-down(lg) {
+    min-height: 260px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -25,12 +28,19 @@
     position: absolute;
     top: 28px;
     left: 36px;
+    @include media-breakpoint-down(lg) {
+      left: 24px;
+      top: 16px;
+    }
   }
   &__content {
     position: absolute;
     padding-inline: 36px;
     bottom: 28px;
     color: var(--color-white);
+    @include media-breakpoint-down(lg) {
+      padding-inline: 24px;
+    }
   }
 }
 

@@ -1,11 +1,12 @@
 .header {
-  padding: 1rem 0;
   position: relative;
   z-index: 999;
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    padding: 23px 0;
   }
   &__menu-btn {
     width: 42px;
@@ -26,12 +27,25 @@
     }
   }
   &__logo {
+    top: 8px;
+    width: fit-content;
     display: block;
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     z-index: 999;
     transition: transform 0.25s ease;
     &:hover {
       transform: scale(1.05);
+    }
+  }
+  .button-lg {
+    @include media-breakpoint-down(md) {
+      font-size: 11px;
+      padding: 4px 12px;
+      height: 36px;
+      min-width: auto;
     }
   }
 }
