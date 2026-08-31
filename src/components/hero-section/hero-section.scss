@@ -1,0 +1,36 @@
+.hero-section {
+  width: 100%;
+  aspect-ratio: 1440/600;
+  min-height: 600px;
+  position: relative;
+  padding-bottom: 40px;
+  @include media-breakpoint-down(sm) {
+    min-height: 672px;
+  }
+}
+.hero__img {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.hero__content {
+  top: 0;
+  position: absolute;
+  max-width: 27.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  @include media-breakpoint-down(sm) {
+    justify-content: flex-end;
+    bottom: 64px;
+    top: auto;
+  }
+}

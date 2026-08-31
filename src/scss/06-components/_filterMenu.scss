@@ -1,10 +1,9 @@
 .filterMenu {
   padding-bottom: 1rem;
-  border-bottom: 3px solid var(--color-border);
+  border-bottom: 3px solid var(--color-light);
   margin-bottom: 40px;
 }
 
- 
 .filterMenu__input {
   position: relative;
   width: 100%;
@@ -16,7 +15,7 @@
     width: 100%;
     height: 42px;
     padding: 0 44px 0 20px;
-    border: 2px solid var(--color-border);
+    border: 2px solid var(--color-light);
     border-radius: 999px;
     background: var(--color-white);
     font-size: 14px;

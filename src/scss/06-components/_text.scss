@@ -11,7 +11,7 @@
   font-size: 50px;
   line-height: 1.1;
   @include media-breakpoint-down(lg) {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 .h2,
@@ -20,13 +20,16 @@
   line-height: 1.1;
   letter-spacing: 0.01em;
   @include media-breakpoint-down(lg) {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .h3,
 .o-content h2 {
   font-size: 24px;
   line-height: 1.1;
+  @include media-breakpoint-down(lg) {
+    font-size: 22px;
+  }
 }
 .h4 {
   font-size: 20px;

@@ -1,9 +1,11 @@
-{% extends "@components/base/base.twig" %}
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %} {% include "@components/hero-section/hero-section.twig" %}
 
-{% set title = "01.0_homepage" %}
-
-{% block main %}
-
-Hello, World!
+<main class="main" aria-label="Hlavní obsah">
+  {% include "@components/hp-matches/hp-matches.twig" %} {% include
+  "@components/hp-posts/hp-posts.twig" %} {% include
+  "@components/hp-links/hp-links.twig" %} {% include
+  "@components/partners/partners.twig" %}
+</main>
 
 {% endblock %}

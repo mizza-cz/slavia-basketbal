@@ -61,54 +61,7 @@ block main %}
         </div>
       </div>
 
-      {% include "@components/archive-section/archive-section.twig" %}
-      <nav class="pagination-wrap" aria-label="Navigace stránek">
-        <ul class="pagination">
-          <li class="page-item disabled">
-            <a
-              class="page-link page-link--prev"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              aria-label="Předchozí stránka"
-            >
-              {% include "@images/left-arrow.svg" %}
-            </a>
-          </li>
-
-          <li class="page-item active" aria-current="page">
-            <a class="page-link" href="#">1</a>
-          </li>
-
-          <li class="page-item">
-            <a class="page-link" href="#">2</a>
-          </li>
-
-          <li class="page-item">
-            <a class="page-link" href="#">3</a>
-          </li>
-
-          <li class="page-item page-item--dots" aria-hidden="true">
-            <span class="page-link">…</span>
-          </li>
-
-          <li class="page-item">
-            <a class="page-link" href="#">9</a>
-          </li>
-
-          <li class="page-item">
-            <a
-              class="page-link page-link--next"
-              href="#"
-              aria-label="Další stránka"
-            >
-              {% include "@images/right-arrow.svg" %}
-            </a>
-          </li>
-        </ul>
-
-        <div class="text-md mt-6 text-center">Zobrazeno 1-12 z 76 článků</div>
-      </nav>
+      
     </div>
   </div>
   {% include "@components/partners/partners.twig" %}

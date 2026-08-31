@@ -45,7 +45,85 @@
 							<img class="object-fit-contain" src="images/ico/header-logo.svg" width="70" height="66" alt="" />
 						</a>
 
-						<a href="#" class="button-light-outline button-lg">Vstupenky </a>
+						<a href="#" class="button-light-outline button-lg"> Vstupenky </a>
+					</div>
+				</div>
+
+				<div class="headerMenu" id="main-menu" aria-hidden="true">
+					<div class="headerMenu__bg"></div>
+
+					<div class="headerMenu__inner">
+						<button class="headerMenu__close" type="button" aria-label="Zavřít menu" data-menu-close>
+							<span></span>
+							<span></span>
+						</button>
+
+						<div class="headerMenu__content">
+							<div class="headerMenu__teams">
+								<div class="headerMenu__group is-open">
+									<button class="headerMenu__group-btn" type="button" aria-expanded="true">
+										A-TÝM
+										<span class="headerMenu__chevron"></span>
+									</button>
+
+									<ul class="headerMenu__submenu">
+										<li><a href="#">Soupiska</a></li>
+										<li><a href="#">Zápasy</a></li>
+										<li><a href="#">Tabulka</a></li>
+										<li><a href="#">Statistiky</a></li>
+									</ul>
+								</div>
+
+								<div class="headerMenu__group">
+									<button class="headerMenu__group-btn" type="button" aria-expanded="false">
+										B-TÝM
+										<span class="headerMenu__chevron"></span>
+									</button>
+
+									<ul class="headerMenu__submenu">
+										<li><a href="#">Soupiska</a></li>
+										<li><a href="#">Zápasy</a></li>
+										<li><a href="#">Tabulka</a></li>
+										<li><a href="#">Statistiky</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<nav class="headerMenu__nav" aria-label="Hlavní navigace">
+								<ul>
+									<li><a href="#">Články</a></li>
+									<li><a href="#">Fotogalerie</a></li>
+									<li><a href="#">Mládež</a></li>
+									<li><a href="#">Kariéra</a></li>
+									<li><a href="#">Partneři</a></li>
+									<li><a href="#">Kontakty</a></li>
+								</ul>
+							</nav>
+
+							<div class="headerMenu__right">
+								<div class="headerMenu__socials">
+									<a href="#" aria-label="Instagram">
+										<img src="images/ico/instagram.svg" alt="" />
+									</a>
+									<a href="#" aria-label="Facebook">
+										<img src="images/ico/facebook.svg" alt="" />
+									</a>
+									<a href="#" aria-label="TikTok">
+										<img src="images/ico/tiktok.svg" alt="" />
+									</a>
+									<a href="#" aria-label="LinkedIn">
+										<img src="images/ico/linkedin.svg" alt="" />
+									</a>
+									<a href="#" aria-label="X">
+										<img src="images/ico/twitter.svg" alt="" />
+									</a>
+								</div>
+
+								<a href="#" class="button-light-outline button-lg mt-10">
+									Vstupenky
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</header>
@@ -75,13 +153,24 @@
 
 					<form action="" class="filterMenu">
 						<div class="d-flex align-items-center justify-content-between flex-wrap gap-6">
-							<div class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100">
-								<label for="month">Měsíc:</label>
-								<select class="js-select" name="month" id="month">
-									<option value="1">Leden</option>
-									<option value="1">Leden</option>
-									<option value="1">Leden</option>
-								</select>
+							<div class="d-flex align-items-center gap-lg-8 gap-6 flex-wrap">
+								<div class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100">
+									<label for="month">Měsíc:</label>
+									<select class="js-select" name="month" id="month">
+										<option value="1">Leden</option>
+										<option value="1">Leden</option>
+										<option value="1">Leden</option>
+									</select>
+								</div>
+								<div class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100">
+									<label for="category">Kategorie:</label>
+									<select class="js-select" name="category" id="category">
+										<option value="1">Zápasy</option>
+										<option value="1">Kategorie 1</option>
+										<option value="1">Kategorie 1</option>
+										<option value="1">Kategorie 1</option>
+									</select>
+								</div>
 							</div>
 							<div class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100">
 								<label for="searchInput">Hledat:</label>
@@ -256,7 +345,9 @@
 							</li>
 						</ul>
 
-						<div class="text-md mt-6 text-center">Zobrazeno 1-12 z 76 článků</div>
+						<div class="text-md mt-6 text-center">
+							Zobrazeno 1-12 z 76 fotografií
+						</div>
 					</nav>
 				</div>
 			</div>

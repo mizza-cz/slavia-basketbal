@@ -1,0 +1,54 @@
+{% extends "@components/base/base.twig" %} {% set title = "07.0_table" %} {%
+block main %}
+<div class="bg-subpage">
+  {% include "@components/header/header.twig" %}
+  <div class="pt-12 pb-lg-8 pb-6">
+    <div class="container-full">
+      <h1 class="h1 text-white">Tabulka</h1>
+    </div>
+  </div>
+</div>
+
+<main class="main" aria-label="Hlavní obsah">
+  <div class="mt-4 mb-lg-15 mb-10">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">
+              <img
+                class="object-fit-contain"
+                width="20"
+                height="19"
+                src="images/ico/logo-primary.svg"
+                alt="home"
+              />
+            </a>
+          </li>
+
+          <li class="breadcrumb-item active" aria-current="page">Tabulka</li>
+        </ol>
+      </nav>
+
+      <form action="" class="filterMenu">
+        <div
+          class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100"
+        >
+          <label for="month">Sezóna:</label>
+          <select class="js-select" name="month" id="month">
+            <option value="1">2025/26</option>
+            <option value="1">2024/25</option>
+            <option value="1">2023/24</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="o-content">
+        {% include "@components/table-section/table-section.twig" %}
+      </div>
+    </div>
+  </div>
+  {% include "@components/partners/partners.twig" %}
+</main>
+
+{% endblock %}

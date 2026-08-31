@@ -1,0 +1,198 @@
+.hp-matches {
+  margin-top: -40px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 10;
+
+  @include media-breakpoint-down(xl) {
+    margin-top: -40px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+
+    @include media-breakpoint-down(xl) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    flex: 1;
+    min-width: 0;
+
+    @include media-breakpoint-down(xl) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__more {
+    width: 114px;
+    flex: 0 0 114px;
+    background: var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    padding: 24px 12px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background: #494c52;
+    }
+
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+      min-height: 57px;
+      flex: none;
+      padding: 10px 28px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__more-icon {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 42px;
+
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__more-text {
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(xl) {
+      flex: 1;
+      text-align: center;
+    }
+  }
+}
+
+.match-card {
+  min-width: 0;
+  min-height: 235px;
+  padding: 32px 32px;
+  background: var(--color-white);
+  display: grid;
+  grid-template-columns: 98px minmax(0, 1fr) 98px;
+  gap: 20px;
+
+  @include media-breakpoint-down(xl) {
+    min-height: 0;
+    padding: 26px 24px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 24px 16px 20px;
+  }
+
+  &--upcoming {
+    @include media-breakpoint-down(xl) {
+      order: 1;
+    }
+  }
+
+  &--finished {
+    @include media-breakpoint-down(xl) {
+      order: 2;
+    }
+  }
+
+  &__team {
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    @include media-breakpoint-down(xl) {
+      grid-row: 1;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+
+    &--home {
+      @include media-breakpoint-down(xl) {
+        grid-column: 1;
+        justify-content: flex-end;
+        padding-right: 18px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding-right: 12px;
+      }
+    }
+
+    &--away {
+      @include media-breakpoint-down(xl) {
+        grid-column: 2;
+        justify-content: flex-start;
+        padding-left: 18px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 12px;
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 98px;
+    height: 98px;
+    object-fit: contain;
+    @include media-breakpoint-down(xl) {
+      width: 88px;
+      height: 88px;
+    }
+  }
+
+  &__content {
+    min-width: 0;
+    text-align: center;
+
+    @include media-breakpoint-down(xl) {
+      grid-column: 1 / -1;
+      grid-row: 2;
+    }
+  }
+
+  &__score {
+    margin-bottom: 28px;
+    font-family: var(--font-secondary);
+    color: var(--color-primary);
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    white-space: nowrap;
+
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}

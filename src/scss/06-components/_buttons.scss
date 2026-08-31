@@ -1,5 +1,5 @@
 [class^="button-"] {
-  padding: 0 8px;
+  padding: 10px 16px;
   border-radius: 50px;
   transition: all 0.25s;
   text-transform: uppercase;
@@ -24,6 +24,26 @@
     background: rgba(#fff, 0.1);
   }
 }
+.button-dark-outline {
+  color: var(--color-dark);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid var(--color-dark);
+  background-color: transparent;
+  &:hover {
+    background: rgba(#1b1f27, 0.1);
+  }
+}
+.button-dark {
+  color: var(--color-white);
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid var(--color-dark);
+  background-color: var(--color-dark);
+  &:hover {
+    background: #494c52;
+  }
+}
 .btn-light {
   background: var(--color-light);
   color: var(--color-accent);
@@ -35,5 +55,5 @@
 
 .button-lg {
   font-size: 15px;
-  padding: 13px 2rem 10px;
+  padding: 12px 2rem 11px;
 }

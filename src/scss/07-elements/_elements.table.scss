@@ -1,0 +1,22 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: var(--color-white);
+  min-width: 640px;
+  th,
+  td {
+    vertical-align: middle;
+  }
+  th {
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 16px;
+    background-color: var(--color-dark);
+  }
+  td {
+    color: var(--color-dark);
+    font-size: 16px;
+    border: 1px solid var(--color-light-lighter);
+    padding: 8px 12px;
+  }
+}

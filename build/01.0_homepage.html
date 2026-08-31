@@ -31,7 +31,312 @@
 <body>
 	<div class="base">
 
-		Hello, World!
+		<div class="hero-section">
+			<header class="header">
+				<div class="container-full">
+					<div class="header__inner">
+						<button class="header__menu-btn" type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="main-menu" data-menu-open>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+
+						<a href="/" class="header__logo" aria-label="Slavia Praha">
+							<img class="object-fit-contain" src="images/ico/header-logo.svg" width="70" height="66" alt="" />
+						</a>
+
+						<a href="#" class="button-light-outline button-lg"> Vstupenky </a>
+					</div>
+				</div>
+
+				<div class="headerMenu" id="main-menu" aria-hidden="true">
+					<div class="headerMenu__bg"></div>
+
+					<div class="headerMenu__inner">
+						<button class="headerMenu__close" type="button" aria-label="Zavřít menu" data-menu-close>
+							<span></span>
+							<span></span>
+						</button>
+
+						<div class="headerMenu__content">
+							<div class="headerMenu__teams">
+								<div class="headerMenu__group is-open">
+									<button class="headerMenu__group-btn" type="button" aria-expanded="true">
+										A-TÝM
+										<span class="headerMenu__chevron"></span>
+									</button>
+
+									<ul class="headerMenu__submenu">
+										<li><a href="#">Soupiska</a></li>
+										<li><a href="#">Zápasy</a></li>
+										<li><a href="#">Tabulka</a></li>
+										<li><a href="#">Statistiky</a></li>
+									</ul>
+								</div>
+
+								<div class="headerMenu__group">
+									<button class="headerMenu__group-btn" type="button" aria-expanded="false">
+										B-TÝM
+										<span class="headerMenu__chevron"></span>
+									</button>
+
+									<ul class="headerMenu__submenu">
+										<li><a href="#">Soupiska</a></li>
+										<li><a href="#">Zápasy</a></li>
+										<li><a href="#">Tabulka</a></li>
+										<li><a href="#">Statistiky</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<nav class="headerMenu__nav" aria-label="Hlavní navigace">
+								<ul>
+									<li><a href="#">Články</a></li>
+									<li><a href="#">Fotogalerie</a></li>
+									<li><a href="#">Mládež</a></li>
+									<li><a href="#">Kariéra</a></li>
+									<li><a href="#">Partneři</a></li>
+									<li><a href="#">Kontakty</a></li>
+								</ul>
+							</nav>
+
+							<div class="headerMenu__right">
+								<div class="headerMenu__socials">
+									<a href="#" aria-label="Instagram">
+										<img src="images/ico/instagram.svg" alt="" />
+									</a>
+									<a href="#" aria-label="Facebook">
+										<img src="images/ico/facebook.svg" alt="" />
+									</a>
+									<a href="#" aria-label="TikTok">
+										<img src="images/ico/tiktok.svg" alt="" />
+									</a>
+									<a href="#" aria-label="LinkedIn">
+										<img src="images/ico/linkedin.svg" alt="" />
+									</a>
+									<a href="#" aria-label="X">
+										<img src="images/ico/twitter.svg" alt="" />
+									</a>
+								</div>
+
+								<a href="#" class="button-light-outline button-lg mt-10">
+									Vstupenky
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<picture class="hero__img">
+				<!-- Mobile -->
+				<source media="(max-width: 540px)" srcset="images/content/hero-mobile.png" />
+
+				<!-- Desktop -->
+				<img src="images/content/hero-desk.png" srcset="images/content/hero-desk.png" alt="hero" />
+			</picture>
+			<div class="container">
+				<div class="hero__content">
+					<h1 class="h1 text-white mb-3">PRODEJ PERMIC ZAHÁJEN</h1>
+					<p class="text-xl text-white mb-10">
+						Nová éra začíná – buďte u toho s námi!
+					</p>
+					<a href="#" class="button-dark button-lg py-4">KOUPIT PERMICE</a>
+				</div>
+			</div>
+		</div>
+
+		<main class="main" aria-label="Hlavní obsah">
+			<section class="hp-matches">
+				<div class="container-full">
+					<div class="hp-matches__inner">
+						<div class="hp-matches__list">
+							<!-- Finished match -->
+							<article class="match-card match-card--finished">
+								<div class="match-card__team match-card__team--home">
+									<img class="match-card__logo" src="images/content/slavia.png" alt="Slavia Praha" />
+								</div>
+
+								<div class="match-card__content">
+									<div class="mb-4">STŘ 21. 10. 2026 17:30</div>
+
+									<div class="mb-8">
+										<strong>Slavia Praha</strong>
+										<div>Sršni Písek</div>
+									</div>
+
+									<div class="match-card__score">87 : 81</div>
+
+									<a href="#" class="button-dark-outline"> ČLÁNEK </a>
+								</div>
+
+								<div class="match-card__team match-card__team--away">
+									<img class="match-card__logo" src="images/content/pisek.png" alt="Sršni Písek" />
+								</div>
+							</article>
+
+							<!-- Upcoming match -->
+							<article class="match-card match-card--upcoming">
+								<div class="match-card__team match-card__team--home">
+									<img class="match-card__logo" src="images/content/slavia.png" alt="Slavia Praha" />
+								</div>
+
+								<div class="match-card__content">
+									<div class="mb-4">SOB 24. 10. 2026 18:00</div>
+
+									<div class="mb-8">
+										<strong>Slavia Praha</strong>
+										<div>BK Pardubice</div>
+									</div>
+
+									<div class="match-card__score">- : -</div>
+
+									<div class="match-card__actions">
+										<a href="#" class="button-dark"> VSTUPENKY </a>
+
+										<a href="#" class="button-dark-outline"> PREVIEW </a>
+									</div>
+								</div>
+
+								<div class="match-card__team match-card__team--away">
+									<img class="match-card__logo" src="images/content/pard.png" alt="BK KVIS Pardubice" />
+								</div>
+							</article>
+						</div>
+
+						<a href="#" class="hp-matches__more">
+							<span class="hp-matches__more-icon">→</span>
+							<span class="hp-matches__more-text">DALŠÍ ZÁPASY</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="hp-posts mb-lg-15 mb-10">
+				<div class="container">
+					<div class="d-flex align-items-center justify-content-between gap-6 mb-6">
+						<h2 class="h2">ČLÁNKY</h3>
+							<a href="#" class="button-dark-outline d-md-flex d-none">DALŠÍ ČLÁNKY</a>
+					</div>
+					<div class="row g-5  ">
+						<div class="col-lg-4 ">
+							<a href="#" class="post">
+								<img class="post__img" srcset="https://picsum.photos/364/320" alt="article" loading="lazy" />
+								<div class="tag">klub</div>
+								<div class="post__content">
+									<div class="text-xxl fw-bold mb-2">
+										Lorem ipsum dolor sit amet consectetuer
+									</div>
+									<time class="text-md" datetime="2026-09-18">18.9.2026</time>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4 ">
+							<a href="#" class="post">
+								<img class="post__img" srcset="https://picsum.photos/364/320" alt="article" loading="lazy" />
+								<div class="tag">klub</div>
+								<div class="post__content">
+									<div class="text-xxl fw-bold mb-2">
+										Lorem ipsum dolor sit amet consectetuer
+									</div>
+									<time class="text-md" datetime="2026-09-18">18.9.2026</time>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4 ">
+							<a href="#" class="post">
+								<img class="post__img" srcset="https://picsum.photos/364/320" alt="article" loading="lazy" />
+								<div class="tag">klub</div>
+								<div class="post__content">
+									<div class="text-xxl fw-bold mb-2">
+										Lorem ipsum dolor sit amet consectetuer
+									</div>
+									<time class="text-md" datetime="2026-09-18">18.9.2026</time>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="hp-links mb-lg-15 mb-10">
+				<div class="container">
+					<h3 class="h2 mb-6">KLUB</h3>
+					<div class="row g-lg-6 g-4">
+						<div class="col-lg-3 col-6">
+							<a href="#" class="linkCard"> A-TÝM </a>
+						</div>
+						<div class="col-lg-3 col-6">
+							<a href="#" class="linkCard"> B-TÝM </a>
+						</div>
+						<div class="col-lg-3 col-6">
+							<a href="#" class="linkCard"> TYGŘI </a>
+						</div>
+						<div class="col-lg-3 col-6">
+							<a href="#" class="linkCard"> KARIÉRA </a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="partners">
+				<div class="container-full">
+					<h5 class="h3 text-white mb-10">HLAVNÍ PARTNEŘI</h5>
+					<div class="row g-6 align-items-center">
+						<div class="col-lg-3 col-sm-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-1.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-2.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-3.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-1.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+					</div>
+
+					<h6 class="h3 text-white mb-10 mt-lg-16 mt-10">PARTNEŘI</h6>
+					<div class="row g-6 align-items-center">
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-1.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-2.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-3.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-1.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-2.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-3.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
 		<footer class="footer">
 			<div class="footerTop">

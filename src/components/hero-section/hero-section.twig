@@ -1,0 +1,26 @@
+<div class="hero-section">
+  {% include "@components/header/header.twig" %}
+  <picture class="hero__img">
+    <!-- Mobile -->
+    <source
+      media="(max-width: 540px)"
+      srcset="images/content/hero-mobile.png"
+    />
+
+    <!-- Desktop -->
+    <img
+      src="images/content/hero-desk.png"
+      srcset="images/content/hero-desk.png"
+      alt="hero"
+    />
+  </picture>
+  <div class="container">
+    <div class="hero__content">
+      <h1 class="h1 text-white mb-3">PRODEJ PERMIC ZAHÁJEN</h1>
+      <p class="text-xl text-white mb-10">
+        Nová éra začíná – buďte u toho s námi!
+      </p>
+      <a href="#" class="button-dark button-lg py-4">KOUPIT PERMICE</a>
+    </div>
+  </div>
+</div>

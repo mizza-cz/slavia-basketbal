@@ -1,0 +1,22 @@
+.hp-links {
+}
+.linkCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  aspect-ratio: 264/152;
+  background-color: var(--color-primary);
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: 24px;
+  line-height: 1;
+  text-decoration: none;
+  border: 2px solid var(--color-primary);
+  transition: all 0.25s ease;
+  &:hover {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+  }
+}
