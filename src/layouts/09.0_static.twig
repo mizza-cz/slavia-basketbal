@@ -1,0 +1,126 @@
+{% extends "@components/base/base.twig" %} {% set title = "09.0_static" %} {%
+block main %}
+<div class="bg-subpage">{% include "@components/header/header.twig" %}</div>
+
+<main class="main" aria-label="Hlavní obsah">
+  <div class="mt-4">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">
+              <img
+                class="object-fit-contain"
+                width="20"
+                height="19"
+                src="images/ico/logo-primary.svg"
+                alt="home"
+              />
+            </a>
+          </li>
+
+          <li class="breadcrumb-item active" aria-current="page">
+            Statická stránka
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <article class="article-section">
+    <div class="container o-content mb-lg-20 mb-12">
+      <h1>Headline H1</h1>
+      <p>
+        <strong>
+          Letošní pražská derby mezi SK Slavia Praha a USK Praha nabídla šest
+          zápasů, řadu silných momentů a také zajímavý pohled na to, kdo měl v
+          sezoně 2025/2026 navrch. Na samotné výhry skončila série vyrovnaně
+          3:3, přesto může Slavia oprávněně mluvit o tom, že právě ona byla
+          letos vládcem Prahy. V součtu všech šesti derby byla totiž lepší na
+          celkové skóre 504:496 a zároveň ovládla i hlavní individuální
+          statistiky celé série. To je při vyrovnané bilanci argument, který má
+          jasnou váhu.
+        </strong>
+      </p>
+      <h2>Headline H2</h2>
+      <h3>Headline H3</h3>
+      <h4>Headline H4</h4>
+      <h5>Headline H5</h5>
+      <h6>Headline H6</h6>
+      <p>
+        Při pohledu na individuální čísla je nejvýraznější postavou celé derby
+        série Rubin Jones. Rozehrávač Slavie nasbíral ve vzájemných zápasech
+        celkem 123 bodů a stal se nejlepším střelcem všech letošních derby.
+        Druhý skončil David Böhm se 108 body a třetí místo obsadil Jalen
+        Montgomery z USK se 78 body. Už to samo o sobě ukazuje, že Slavia měla v
+        derby sérii největší ofenzivní sílu právě ve svých rukou.
+      </p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing .</li>
+        <li>
+          <a href="#"> Lorem ipsum dolor sit amet </a>
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ul>
+      <p>
+        Slavia měla navrch také na doskoku. Nejlepším doskakovačem celé série
+        byl David Böhm s 45 doskoky, druhý skončil Touko Tainamo z USK se 37
+        doskoky a třetí místo patřilo Petru Macháčovi s 30 doskoky. Právě
+        dominance na doskoku byla v řadě derby jedním z faktorů, které držely
+        Slavii ve hře i v těžších pasážích zápasů.
+      </p>
+      <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing .</li>
+        <li>
+          <a href="#"> Lorem ipsum dolor sit amet </a>
+        </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      </ol>
+      <p>
+        Také v tvorbě hry stála na vrcholu Slavia. Nejlepším nahrávačem celé
+        série byl Rubin Jones s 29 asistencemi. Jen těsně za ním skončil Ondřej
+        Švec z USK s 28 asistencemi. O třetí místo se dělí Jalen Montgomery a
+        Matěj Šafařík, kteří oba zaznamenali 18 asistencí. I tady tak Slavia
+        drží první příčku a potvrzuje, že v derby nešlo jen o individuální body,
+        ale i o schopnost řídit tempo a vytvářet šance pro ostatní.
+      </p>
+      <p>
+        <img src="https://picsum.photos/1128/480" loading="lazy" alt="img" />
+      </p>
+      <p>
+        Když se podíváme na nejlepší jednotlivé výkony celé série podle
+        oficiální hodnoty užitečnosti, i zde najdeme slávistickou stopu na
+        samotném vrcholu. Nejlepší výkon předvedl David Böhm při domácí výhře
+        86:71, kdy zapsal 30 bodů, 10 doskoků, 5 asistencí a užitečnost 41.
+        Druhý nejlepší výkon patřil Ondřeji Švecovi z USK, který v listopadovém
+        derby nasbíral 26 bodů, 7 doskoků, 6 asistencí a užitečnost 40. Třetí
+        místo obsadil Rubin Jones, jenž při únorové výhře 98:94 zaznamenal 26
+        bodů, 9 doskoků, 11 asistencí a užitečnost 38. Slavia tak má nejen
+        nejlepšího hráče celé série podle součtu statistik, ale i dva ze tří
+        nejlepších individuálních výkonů.
+      </p>
+      <p>
+        Letošní derby tak přinesla jednoduchý závěr. Na počet výher zůstala
+        Praha rozdělena přesně napůl. Na skóre celé série, v klíčových
+        individuálních statistikách i v posledním vzájemném zápase ale byla
+        lepší Slavia. A právě proto může po sezoně 2025/2026 říct nahlas a bez
+        zbytečných pochybností jediné: vládci Prahy jsou sešívaní.
+      </p>
+    </div>
+
+    {% include "@components/gallery/gallery.twig" %}
+    <div class="container">
+      <h3 class="h3 mb-lg-8 mb-6">DALŠÍ ČLÁNKY</h3>
+
+      <div class="row g-5">
+        {% for i in 1..3 %}
+        <div class="col-md-4">{% include "@components/post/post.twig" %}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+  {% include "@components/partners/partners.twig" %}
+</main>
+
+{% endblock %}
