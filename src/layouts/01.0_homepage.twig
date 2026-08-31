@@ -1,5 +1,26 @@
 {% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
-block main %} {% include "@components/hero-section/hero-section.twig" %}
+block main %}
+<div class="topAlert">
+  <div class="container-full">
+    <div class="topAlert__inner">
+      <div class="topAlert__text">
+        Poslední možnost si zakoupit permanentky na sezónu 2026/27!
+        <a href="#">Více informací</a>
+      </div>
+
+      <button
+        class="topAlert__close"
+        type="button"
+        aria-label="Zavřít upozornění"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+{% include "@components/hero-section/hero-section.twig" %}
 
 <main class="main" aria-label="Hlavní obsah">
   {% include "@components/hp-matches/hp-matches.twig" %} {% include
