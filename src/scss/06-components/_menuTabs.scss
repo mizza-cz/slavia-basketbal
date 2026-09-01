@@ -10,13 +10,14 @@
       color: var(--color-dark);
       text-decoration: none;
       text-transform: uppercase;
+
       &::before {
         content: "";
         position: absolute;
         bottom: -27px;
         height: 3px;
         width: 100%;
-        background-color: var(--color-light);
+        background-color: transparent;
         left: 0;
       }
     }
@@ -25,6 +26,7 @@
       font-weight: 700;
       &::before {
         background-color: var(--color-primary);
+        z-index: 3;
       }
     }
   }

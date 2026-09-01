@@ -26,40 +26,10 @@ block main %}
             </a>
           </li>
 
-          <li class="breadcrumb-item active" aria-current="page">| Zápasy</li>
+          <li class="breadcrumb-item active" aria-current="page">Zápasy</li>
         </ol>
       </nav>
-
-      <div class="menuTabs">
-        <ul class="nav nav-tabs">
-          <li>
-            <a class="active" href="#allGames"> Vše </a>
-          </li>
-          <li>
-            <a class=" " href="#beforeGames">Nadcházející</a>
-          </li>
-          <li>
-            <a class=" " href="#afterGames">Odehrané</a>
-          </li>
-          <li>
-            <a class=" " href="#homeGames">Doma </a>
-          </li>
-          <li>
-            <a href="#outsideGames">Venku </a>
-          </li>
-        </ul>
-        <div
-          class="d-flex gap-4 align-items-center flex-md-nowrap flex-wrap w-md-auto w-100"
-        >
-          <select class="js-select" name="category" id="category">
-            <option value="1">NBL 2026/27</option>
-            <option value="1">NBL 2026/27</option>
-            <option value="1">NBL 2026/27</option>
-            <option value="1">NBL 2026/27</option>
-            <option value="1">NBL 2026/27</option>
-          </select>
-        </div>
-      </div>
+      {% include "@components/matches-section/matches-section.twig" %}
     </div>
   </div>
   {% include "@components/partners/partners.twig" %}
