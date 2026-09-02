@@ -19,6 +19,13 @@
   blockquote {
     margin-bottom: 32px;
   }
+  a {
+    color: var(--color-primary);
+    transition: text-decoration-color 0.3s, color 0.3s;
+    &:hover {
+      color: var(--color-dark);
+    }
+  }
   p {
     margin-bottom: 1.5rem;
   }
