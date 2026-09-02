@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>13.0_match-detail-after - SK Slavia Praha – Basketbal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<!--****** Favicon ******-->
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+	<link rel="shortcut icon" href="favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+	<link rel="manifest" href="favicon/site.webmanifest" />
+	<!--****** Fonts ******-->
+
+	<!--****** Styles  ******-->
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<!--****** Styles  ******-->
+
+	<!--****** Scripts  ******-->
+	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+	<!-- ****** scripts ****** -->
+</head>
+
+<body>
+	<div class="base">
+
+		<div class="bg-subpage">
+			<header class="header">
+				<div class="container-full">
+					<div class="header__inner">
+						<button class="header__menu-btn" type="button" aria-label="Otevřít menu" aria-expanded="false" aria-controls="main-menu" data-menu-open>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+
+						<a href="/" class="header__logo" aria-label="Slavia Praha">
+							<img class="object-fit-contain" src="images/ico/header-logo.svg" width="70" height="66" alt="" />
+						</a>
+
+						<a href="#" class="button-light-outline button-lg"> Vstupenky </a>
+					</div>
+				</div>
+
+				<div class="headerMenu" id="main-menu" aria-hidden="true">
+					<div class="headerMenu__bg"></div>
+
+					<div class="headerMenu__inner">
+						<button class="headerMenu__close" type="button" aria-label="Zavřít menu" data-menu-close>
+							<span></span>
+							<span></span>
+						</button>
+
+						<div class="headerMenu__content">
+							<div class="headerMenu__teams">
+								<div class="headerMenu__group is-open">
+									<button class="headerMenu__group-btn" type="button" aria-expanded="true">
+										A-TÝM
+										<span class="headerMenu__chevron"></span>
+									</button>
+
+									<ul class="headerMenu__submenu">
+										<li><a href="#">Soupiska</a></li>
+										<li><a href="#">Zápasy</a></li>
+										<li><a href="#">Tabulka</a></li>
+										<li><a href="#">Statistiky</a></li>
+									</ul>
+								</div>
+
+								<div class="headerMenu__group">
+									<button class="headerMenu__group-btn" type="button" aria-expanded="false">
+										B-TÝM
+										<span class="headerMenu__chevron"></span>
+									</button>
+
+									<ul class="headerMenu__submenu">
+										<li><a href="#">Soupiska</a></li>
+										<li><a href="#">Zápasy</a></li>
+										<li><a href="#">Tabulka</a></li>
+										<li><a href="#">Statistiky</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<nav class="headerMenu__nav" aria-label="Hlavní navigace">
+								<ul>
+									<li><a href="#">Články</a></li>
+									<li><a href="#">Fotogalerie</a></li>
+									<li><a href="#">Mládež</a></li>
+									<li><a href="#">Kariéra</a></li>
+									<li><a href="#">Partneři</a></li>
+									<li><a href="#">Kontakty</a></li>
+								</ul>
+							</nav>
+
+							<div class="headerMenu__right">
+								<div class="headerMenu__socials">
+									<a href="#" aria-label="Instagram">
+										<img src="images/ico/instagram.svg" alt="" />
+									</a>
+									<a href="#" aria-label="Facebook">
+										<img src="images/ico/facebook.svg" alt="" />
+									</a>
+									<a href="#" aria-label="TikTok">
+										<img src="images/ico/tiktok.svg" alt="" />
+									</a>
+									<a href="#" aria-label="LinkedIn">
+										<img src="images/ico/linkedin.svg" alt="" />
+									</a>
+									<a href="#" aria-label="X">
+										<img src="images/ico/twitter.svg" alt="" />
+									</a>
+								</div>
+
+								<a href="#" class="button-light-outline button-lg mt-10">
+									Vstupenky
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+
+		<main class="main" aria-label="Hlavní obsah">
+			<div class="mt-4">
+				<div class="container">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a href="#">
+									<img class="object-fit-contain" width="20" height="19" src="images/ico/logo-primary.svg" alt="home" />
+								</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a href="#">Zápasy</a>
+							</li>
+							<li class="breadcrumb-item active" aria-current="page">
+								Slavia Praha vs BK Pardubice
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+			<section class="matchDetail mb-lg-15 mb-10">
+				<div class="container">
+					<div class="matchDetail__score">
+						<div class="matchDetail__team">
+							<div class="matchDetail__team-logo">
+								<img src="images/content/slavia.png" alt="Slavia Praha" />
+							</div>
+							<div class="fw-bold text-base">Slavia Praha</div>
+						</div>
+
+						<div class="matchDetail__score-center">
+							<div class="matchDetail__result">98 : 81</div>
+
+							<div class="text-md">1. kolo | Základní část</div>
+							<div class="text-md fw-bold">SOB 24. 10. 2026 18:00</div>
+
+							<a href="#" class="d-flex justify-content-center mt-3" target="_blank">
+								<img src="images/content/tvcom.png" width="68" height="20" class="object-fit-contain" alt="" />
+							</a>
+						</div>
+
+						<div class="matchDetail__team">
+							<div class="matchDetail__team-logo">
+								<img src="images/content/pard.png" alt="BK Pardubice" />
+							</div>
+
+							<div class="fw-bold text-base">BK Pardubice</div>
+						</div>
+					</div>
+					<div class="o-content mb-10">
+						<h1>usk v derby poraženo o 30 bodů</h1>
+						<div class="row g-6">
+							<div class="col-lg-5">
+								<img src="images/content/post.png" alt="Slavia Praha " />
+							</div>
+
+							<div class="col-lg-7">
+								<p>
+									<strong>
+										Basketbalisté SK Slavia Praha zakončili sezonu 2025/2026
+										vítězstvím, které má historickou hodnotu. Na palubovce USK Praha
+										dokázali poprvé v historii zvítězit, když na Folimance vyhráli
+										76:81.
+									</strong>
+								</p>
+								<p>
+									Začátek utkání přitom vůbec nenasvědčoval tomu, že by si Slavia
+									mohla odvézt výhru. Domácí USK vstoupilo do zápasu výrazně lépe,
+									rychle si vybudovalo dvouciferný náskok a hostující tým se dlouho
+									nemohl dostat do tempa. Útok drhnul, obrana nestíhala a skóre po
+									první čtvrtině 25:15 odráželo dění na hřišti.
+								</p>
+								<p>
+									Zlom přišel s příchodem Vojtěcha Zeithammera na palubovku. Jeho
+									energie a aktivita změnily obraz hry a postupně strhly i zbytek
+									týmu. Slavia začala dotahovat, zlepšila obranu a získala větší
+									jistotu v útoku. Odměnou bylo vyrovnání, o které se těsně před
+									poločasem postaral kapitán Radovan Mrázek, když upravil na 41:41.
+								</p>
+								<p>
+									Druhá polovina nabídla vyrovnaný a kvalitní basketbal. Oba týmy se
+									přetahovaly o vedení a bylo jasné, že rozhodovat budou detaily. Po
+									třetí čtvrtině vedlo USK těsně 60:59, ale závěr zápasu patřil
+									hostům. V polovině poslední části se Slavii podařilo odskočit a
+									vytvořený náskok už nepustila.
+								</p>
+								<p>
+									Klíčovou roli sehrála především dvojice Rubin Jones a Jan Matušík,
+									která táhla tým v rozhodujících momentech. Jones zaznamenal 23 bodů
+									a přidal 4 asistence, Matušík zapsal 19 bodů a 6 doskoků. Výrazný
+									výkon podal také Meshack Lufile, který pomohl 13 body a 9 doskoky.
+								</p>
+							</div>
+						</div>
+						<div class="container-md px-0">
+							<h2>TRENÉR OREN AMIEL</h2>
+							<blockquote>
+								<p>
+									„Krátká víkendová pauza nám přišla vhod. Myslím, že jsme po delší
+									době měli opravdu kvalitní tréninkový týden. Čeká nás nepříjemný
+									soupeř, který hraje ve velmi dobré formě a v posledním zápase svého
+									soupeře rozdrtil. Nečeká nás jednoduché utkání, stejně jako v celé
+									skupině A2. Uděláme všechno pro to, abychom byli dobře připravení a
+									tento zápas zvládli.“
+								</p>
+							</blockquote>
+							<h2>DAVID BÖHM #7</h2>
+							<blockquote>
+								<p>
+									„Krátká víkendová pauza nám přišla vhod. Myslím, že jsme po delší
+									době měli opravdu kvalitní tréninkový týden. Čeká nás nepříjemný
+									soupeř, který hraje ve velmi dobré formě a v posledním zápase svého
+									soupeře rozdrtil. Nečeká nás jednoduché utkání, stejně jako v celé
+									skupině A2. Uděláme všechno pro to, abychom byli dobře připravení a
+									tento zápas zvládli.“
+								</p>
+							</blockquote>
+							<h2>PATRIK AUDA ZA USK</h2>
+							<blockquote>
+								<p>
+									„Krátká víkendová pauza nám přišla vhod. Myslím, že jsme po delší
+									době měli opravdu kvalitní tréninkový týden. Čeká nás nepříjemný
+									soupeř, který hraje ve velmi dobré formě a v posledním zápase svého
+									soupeře rozdrtil. Nečeká nás jednoduché utkání, stejně jako v celé
+									skupině A2. Uděláme všechno pro to, abychom byli dobře připravení a
+									tento zápas zvládli.“
+								</p>
+							</blockquote>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/xE5cN5PrjKI?si=Ih3K_5AEGxyt4HBH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="mb-10">
+						<h3 class="h3 mb-lg-8 mb-6">FOTOGALERIE</h3>
+						<div class="row g-lg-6 g-5">
+							<div class="col-lg-3 col-sm-4 col-6">
+								<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+									<img srcset="images/content/post.png" loading="lazy" alt="post" />
+								</a>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+									<img srcset="images/content/post.png" loading="lazy" alt="post" />
+								</a>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+									<img srcset="images/content/post.png" loading="lazy" alt="post" />
+								</a>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+									<img srcset="images/content/post.png" loading="lazy" alt="post" />
+								</a>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+									<img srcset="images/content/post.png" loading="lazy" alt="post" />
+								</a>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+									<img srcset="images/content/post.png" loading="lazy" alt="post" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="matchDetail__stats">
+						<div class="matchDetail__stats-title">STATISTIKY</div>
+
+						<div class="matchDetail__stats-list">
+							<div class="matchDetail__stat">
+								<div class="matchDetail__stat-head">
+									<div class="matchDetail__stat-value">24 / 37 (65 %)</div>
+									<div class="matchDetail__stat-name">Střelba za 2B</div>
+									<div class="matchDetail__stat-value">24 / 37 (65 %)</div>
+								</div>
+
+								<div class="matchDetail__stat-bar">
+									<div class="matchDetail__stat-side matchDetail__stat-side--home">
+										<span style="width: 65%"></span>
+									</div>
+
+									<div class="matchDetail__stat-side matchDetail__stat-side--away">
+										<span style="width: 65%"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="matchDetail__stat">
+								<div class="matchDetail__stat-head">
+									<div class="matchDetail__stat-value">19 / 21 (90 %)</div>
+									<div class="matchDetail__stat-name">Střelba za 3B</div>
+									<div class="matchDetail__stat-value">19 / 21 (90 %)</div>
+								</div>
+
+								<div class="matchDetail__stat-bar">
+									<div class="matchDetail__stat-side matchDetail__stat-side--home">
+										<span style="width: 90%"></span>
+									</div>
+
+									<div class="matchDetail__stat-side matchDetail__stat-side--away">
+										<span style="width: 90%"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="matchDetail__stat">
+								<div class="matchDetail__stat-head">
+									<div class="matchDetail__stat-value">28</div>
+									<div class="matchDetail__stat-name">Vstřelené bodů</div>
+									<div class="matchDetail__stat-value">28</div>
+								</div>
+
+								<div class="matchDetail__stat-bar">
+									<div class="matchDetail__stat-side matchDetail__stat-side--home">
+										<span style="width: 82%"></span>
+									</div>
+
+									<div class="matchDetail__stat-side matchDetail__stat-side--away">
+										<span style="width: 82%"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="matchDetail__stat">
+								<div class="matchDetail__stat-head">
+									<div class="matchDetail__stat-value">68</div>
+									<div class="matchDetail__stat-name">Doskoky</div>
+									<div class="matchDetail__stat-value">68</div>
+								</div>
+
+								<div class="matchDetail__stat-bar">
+									<div class="matchDetail__stat-side matchDetail__stat-side--home">
+										<span style="width: 72%"></span>
+									</div>
+
+									<div class="matchDetail__stat-side matchDetail__stat-side--away">
+										<span style="width: 72%"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="matchDetail__stat">
+								<div class="matchDetail__stat-head">
+									<div class="matchDetail__stat-value">9</div>
+									<div class="matchDetail__stat-name">Asistence</div>
+									<div class="matchDetail__stat-value">9</div>
+								</div>
+
+								<div class="matchDetail__stat-bar">
+									<div class="matchDetail__stat-side matchDetail__stat-side--home">
+										<span style="width: 53%"></span>
+									</div>
+
+									<div class="matchDetail__stat-side matchDetail__stat-side--away">
+										<span style="width: 53%"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="matchDetail__stat">
+								<div class="matchDetail__stat-head">
+									<div class="matchDetail__stat-value">25</div>
+									<div class="matchDetail__stat-name">Zisky</div>
+									<div class="matchDetail__stat-value">25</div>
+								</div>
+
+								<div class="matchDetail__stat-bar">
+									<div class="matchDetail__stat-side matchDetail__stat-side--home">
+										<span style="width: 60%"></span>
+									</div>
+
+									<div class="matchDetail__stat-side matchDetail__stat-side--away">
+										<span style="width: 30%"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="matchDetail__stat">
+								<div class="matchDetail__stat-head">
+									<div class="matchDetail__stat-value">8</div>
+									<div class="matchDetail__stat-name">Ztráty</div>
+									<div class="matchDetail__stat-value">8</div>
+								</div>
+
+								<div class="matchDetail__stat-bar">
+									<div class="matchDetail__stat-side matchDetail__stat-side--home">
+										<span style="width: 14%"></span>
+									</div>
+
+									<div class="matchDetail__stat-side matchDetail__stat-side--away">
+										<span style="width: 60%"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="matchDetail__stat">
+								<div class="matchDetail__stat-head">
+									<div class="matchDetail__stat-value">14</div>
+									<div class="matchDetail__stat-name">Trestné hody</div>
+									<div class="matchDetail__stat-value">14</div>
+								</div>
+
+								<div class="matchDetail__stat-bar">
+									<div class="matchDetail__stat-side matchDetail__stat-side--home">
+										<span style="width: 74%"></span>
+									</div>
+
+									<div class="matchDetail__stat-side matchDetail__stat-side--away">
+										<span style="width: 45%"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3 class="h3 mb-lg-8 mb-6">DALŠÍ ZÁAPASY</h3>
+					<div class="hp-matches__list">
+						<!-- Finished match -->
+						<article class="match-card match-card--finished">
+							<div class="match-card__team match-card__team--home">
+								<img class="match-card__logo" src="images/content/slavia.png" alt="Slavia Praha" />
+							</div>
+
+							<div class="match-card__content">
+								<div class="mb-4">STŘ 21. 10. 2026 17:30</div>
+
+								<div class="mb-8">
+									<strong>Slavia Praha</strong>
+									<div>Sršni Písek</div>
+								</div>
+
+								<div class="match-card__score">87 : 81</div>
+
+								<a href="#" class="button-dark-outline"> ČLÁNEK </a>
+							</div>
+
+							<div class="match-card__team match-card__team--away">
+								<img class="match-card__logo" src="images/content/pisek.png" alt="Sršni Písek" />
+							</div>
+						</article>
+
+						<!-- Upcoming match -->
+						<article class="match-card match-card--upcoming">
+							<div class="match-card__team match-card__team--home">
+								<img class="match-card__logo" src="images/content/slavia.png" alt="Slavia Praha" />
+							</div>
+
+							<div class="match-card__content">
+								<div class="mb-4">SOB 24. 10. 2026 18:00</div>
+
+								<div class="mb-8">
+									<strong>Slavia Praha</strong>
+									<div>BK Pardubice</div>
+								</div>
+
+								<div class="match-card__score">- : -</div>
+
+								<div class="match-card__actions">
+									<a href="#" class="button-dark"> VSTUPENKY </a>
+
+									<a href="#" class="button-dark-outline"> PREVIEW </a>
+								</div>
+							</div>
+
+							<div class="match-card__team match-card__team--away">
+								<img class="match-card__logo" src="images/content/pard.png" alt="BK KVIS Pardubice" />
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="partners">
+				<div class="container-full">
+					<h5 class="h3 text-white mb-10">HLAVNÍ PARTNEŘI</h5>
+					<div class="row g-6 align-items-center">
+						<div class="col-lg-3 col-sm-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-1.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-2.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-3.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-1.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+					</div>
+
+					<h6 class="h3 text-white mb-10 mt-lg-16 mt-10">PARTNEŘI</h6>
+					<div class="row g-6 align-items-center">
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-1.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-2.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-3.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-1.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-2.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a class="partners__item" href="#">
+								<img src="images/content/partners/p-3.png" loading="lazy" alt="partner" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footerTop">
+				<div class="container-full">
+					<div class="row hover-outline text-uppercase text-md justify-content-between gy-7 gx-5 mb-lg-10 mb-15">
+						<div class="col-lg-auto col-sm-4 col-6">
+							<a href="#" class="fw-bold">A-TÝM</a>
+							<ul class="mt-3 d-grid gap-2">
+								<li>
+									<a href="#">SOUPISKA</a>
+								</li>
+								<li>
+									<a href="#">ZÁPasy</a>
+								</li>
+								<li>
+									<a href="#">TABULKA</a>
+								</li>
+								<li>
+									<a href="#">STATISTIKY</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-auto col-sm-4 col-6">
+							<a href="#" class="fw-bold">B-TÝM</a>
+							<ul class="mt-3 d-grid gap-2">
+								<li>
+									<a href="#">SOUPISKA</a>
+								</li>
+								<li>
+									<a href="#">ZÁPasy</a>
+								</li>
+								<li>
+									<a href="#">TABULKA</a>
+								</li>
+								<li>
+									<a href="#">STATISTIKY</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-auto col-sm-4 col-6">
+							<a href="#" class="fw-bold">VSTUPENKY</a>
+						</div>
+						<div class="col-lg-auto col-sm-4 col-6">
+							<a href="#" class="fw-bold">ČLÁNKY</a>
+						</div>
+						<div class="col-lg-auto col-sm-4 col-6">
+							<a href="#" class="fw-bold">FOTOGALERIE</a>
+						</div>
+						<div class="col-lg-auto col-sm-4 col-6">
+							<a href="#" class="fw-bold">MLÁDEŽ</a>
+						</div>
+						<div class="col-lg-auto col-sm-4 col-6">
+							<a href="#" class="fw-bold">KARIÉRA</a>
+						</div>
+						<div class="col-lg-auto col-sm-4 col-6">
+							<a href="#" class="fw-bold">PARTNEŘI</a>
+						</div>
+						<div class="col-lg-auto col-sm-4 col-6">
+							<a href="#" class="fw-bold">KONTAKTY</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footerBottom">
+				<div class="container-full">
+					<div class="d-flex flex-md-row flex-column align-items-center justify-content-between gap-14">
+						<div class="d-flex flex-column gap-4 align-items-center align-items-md-start">
+							<ul class="social">
+								<li>
+									<a href="#" class="social__link" target="_blank">
+										<img src="images/ico/instagram.svg" alt="ico" />
+									</a>
+								</li>
+								<li>
+									<a href="#" class="social__link" target="_blank">
+										<img src="images/ico/facebook.svg" alt="ico" />
+									</a>
+								</li>
+								<li>
+									<a href="#" class="social__link" target="_blank">
+										<img src="images/ico/tiktok.svg" alt="ico" />
+									</a>
+								</li>
+								<li>
+									<a href="#" class="social__link" target="_blank">
+										<img src="images/ico/linkedin.svg" alt="ico" />
+									</a>
+								</li>
+								<li>
+									<a href="#" class="social__link" target="_blank">
+										<img src="images/ico/twitter.svg" alt="ico" />
+									</a>
+								</li>
+							</ul>
+							<div class="footer__links">
+								<a href="#"> Nastavení cookies </a>
+								<a href="#">Zásady ochrany osobních údajů</a>
+							</div>
+						</div>
+						<a href="#" class="footer-logo">
+							<img src="images/ico/footer-logo.svg" loading="lazy" alt="logo" />
+						</a>
+						<div class="text-center">&copy; SK Slavia Praha – Basketbal</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>

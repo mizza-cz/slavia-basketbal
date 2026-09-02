@@ -1,0 +1,11 @@
+{% extends "@components/base/base.twig" %} {% set title = "10.0_player-detail"
+%} {% block main %}
+<div class="bg-subpage">{% include "@components/header/header.twig" %}</div>
+
+<main class="main" aria-label="Hlavní obsah">
+   
+  {% include "@components/player-detail/player-detail.twig" %} {% include
+  "@components/partners/partners.twig" %}
+</main>
+
+{% endblock %}

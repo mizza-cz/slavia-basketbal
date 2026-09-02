@@ -17,10 +17,18 @@
 //   width: 100%;
 //   padding: 0 20px;
 // }
+.container-md {
+  max-width: 920px !important;
+  margin-inline: auto;
+  padding: 0 20px;
+}
 .container-xs {
   max-width: 47rem !important;
   margin-inline: auto;
   padding: 0 20px;
+}
+.text-primary {
+  color: var(--color-primary) !important;
 }
 .text-white {
   color: var(--color-white) !important;
