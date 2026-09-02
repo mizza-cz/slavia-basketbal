@@ -1,4 +1,94 @@
 .matchDetail {
+  padding-bottom: 80px;
+
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 48px;
+  }
+
+  &__score {
+    min-height: 180px;
+    padding: 28px 80px;
+    margin-bottom: 32px;
+    background: var(--color-white);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 60px;
+    @include media-breakpoint-down(lg) {
+      padding: 24px 40px;
+      gap: 32px;
+    }
+    @include media-breakpoint-down(md) {
+      min-height: 0;
+      padding: 24px 16px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "team-left team-right"
+        "score score";
+      gap: 24px 16px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 20px 12px;
+      gap: 20px 8px;
+    }
+  }
+
+  &__team {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &:first-child {
+      @include media-breakpoint-down(md) {
+        grid-area: team-left;
+      }
+    }
+    &:last-child {
+      @include media-breakpoint-down(md) {
+        grid-area: team-right;
+      }
+    }
+  }
+
+  &__team-logo {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(md) {
+      width: 72px;
+      height: 72px;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+  }
+
+  &__score-center {
+    text-align: center;
+
+    @include media-breakpoint-down(md) {
+      grid-area: score;
+    }
+  }
+
+  &__result {
+    margin-bottom: 8px;
+    color: var(--color-primary);
+    font-family: var(--font-secondary);
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+    @include media-breakpoint-down(md) {
+      font-size: 36px;
+    }
+  }
   &__stats {
     margin-bottom: 40px;
     background: var(--color-white);

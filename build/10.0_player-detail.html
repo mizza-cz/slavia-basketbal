@@ -31,7 +31,7 @@
 <body>
 	<div class="base">
 
-		<div class="bg-subpage">
+		<div class="bg-player">
 			<header class="header">
 				<div class="container-full">
 					<div class="header__inner">
@@ -127,29 +127,149 @@
 					</div>
 				</div>
 			</header>
-		</div>
-
-		<main class="main" aria-label="Hlavní obsah">
-
-			<section class="player-detail">
+			<div class="playerHero">
 				<div class="container">
-					<nav aria-label="breadcrumb">
+					<nav class="playerHero__breadcrumb" aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item">
 								<a href="#">
-									<img class="object-fit-contain" width="20" height="19" src="images/ico/logo-primary.svg" alt="home" />
+									<img class="object-fit-contain" width="16" height="16" src="images/ico/header-logo.svg" alt="Domů" />
 								</a>
 							</li>
 							<li class="breadcrumb-item">
-								<a href="#">Články</a>
+								<a href="#">A-Tým</a>
+							</li>
+							<li class="breadcrumb-item">
+								<a href="#">Soupiska</a>
 							</li>
 							<li class="breadcrumb-item active" aria-current="page">
-								Vládci Prahy: Slavia ovládla derby
+								David Böhm #7
 							</li>
 						</ol>
 					</nav>
+
+					<div class="playerHero__layout">
+						<aside class="playerSidebar">
+							<h2 class="h3 mb-lg-6 mb-4">A-TÝM</h2>
+
+							<ul class="playerSidebar__list">
+								<li class="active">
+									<a href="#">David Böhm</a>
+								</li>
+								<li><a href="#">Kryštof Davídek</a></li>
+								<li><a href="#">Jaquan Lawrence</a></li>
+								<li><a href="#">Ondřej Petrák</a></li>
+								<li><a href="#">Marcus Santos-Silva</a></li>
+								<li><a href="#">Martin Kříž</a></li>
+								<li><a href="#">David Nejezchleb</a></li>
+								<li><a href="#">JT Shumate</a></li>
+								<li><a href="#">Thomas Stanko</a></li>
+								<li><a href="#">Bar Arniel</a></li>
+								<li><a href="#">Goran Filipović</a></li>
+								<li><a href="#">Tony Perks</a></li>
+								<li><a href="#">Ondřej Sehnal</a></li>
+								<li><a href="#">Vojtěch Hruban</a></li>
+								<li><a href="#">Matěj Svoboda</a></li>
+								<li><a href="#">Jaromír Bohačík</a></li>
+								<li><a href="#">František Rylich</a></li>
+								<li><a href="#">KeyShawn Feazell</a></li>
+								<li><a href="#">Wesley Dreamer</a></li>
+								<li><a href="#">Jhamir Brickus</a></li>
+								<li><a href="#">Sir Jabari Rice</a></li>
+								<li><a href="#">Vojtěch Synáček</a></li>
+							</ul>
+						</aside>
+
+						<div class="playerHero__player">
+							<div class="playerHero__photo">
+								<img src="images/content/player-detail.png" alt="David Böhm" />
+							</div>
+
+							<div class="playerHero__info">
+								<div class="playerHero__number">7</div>
+
+								<h1 class="playerHero__name">DAVID BÖHM</h1>
+
+								<dl class="playerHero__stats">
+									<div class="playerHero__stat">
+										<dt>Věk</dt>
+										<dd>25 let</dd>
+									</div>
+
+									<div class="playerHero__stat">
+										<dt>Výška</dt>
+										<dd>207 cm</dd>
+									</div>
+
+									<div class="playerHero__stat">
+										<dt>Národnost</dt>
+										<dd>CZE</dd>
+									</div>
+								</dl>
+							</div>
+						</div>
+					</div>
 				</div>
-			</section>
+			</div>
+		</div>
+
+		<main class="main" aria-label="Hlavní obsah">
+			<div class="playerDetail">
+				<div class="container">
+					<div class="playerDetail__layout">
+						<div class="playerDetail__sidebar-space"></div>
+
+						<div class="playerDetail__content">
+							<div class="mb-10">
+								<h2 class="h3 mb-6">O HRÁČI</h2>
+								<p class="text-base">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi
+									neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
+									ligula sollicitudin laoreet viverra, tortor libero sodales leo,
+									eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo.
+									Suspendisse potenti.
+								</p>
+							</div>
+
+							<h3 class="h3 mb-6">FOTOGALERIE</h3>
+							<div class="row g-lg-6 g-5">
+								<div class="col-sm-4 col-6">
+									<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+										<img srcset="images/content/post.png" loading="lazy" alt="post" />
+									</a>
+								</div>
+								<div class="col-sm-4 col-6">
+									<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+										<img srcset="images/content/post.png" loading="lazy" alt="post" />
+									</a>
+								</div>
+								<div class="col-sm-4 col-6">
+									<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+										<img srcset="images/content/post.png" loading="lazy" alt="post" />
+									</a>
+								</div>
+								<div class="col-sm-4 col-6">
+									<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+										<img srcset="images/content/post.png" loading="lazy" alt="post" />
+									</a>
+								</div>
+								<div class="col-sm-4 col-6">
+									<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+										<img srcset="images/content/post.png" loading="lazy" alt="post" />
+									</a>
+								</div>
+								<div class="col-sm-4 col-6">
+									<a data-source="/slavia-basketbal/build/ajax-gallery.json" data-gallery-id="1" href="#" class="galleryItem">
+										<img srcset="images/content/post.png" loading="lazy" alt="post" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<section class="partners">
 				<div class="container-full">
 					<h5 class="h3 text-white mb-10">HLAVNÍ PARTNEŘI</h5>
@@ -212,7 +332,6 @@
 				</div>
 			</section>
 		</main>
-
 		<footer class="footer">
 			<div class="footerTop">
 				<div class="container-full">
