@@ -46,4 +46,11 @@
 
 .article-section {
   margin-bottom: 40px;
+  .o-content a {
+    color: var(--color-primary);
+    transition: text-decoration-color 0.3s, color 0.3s;
+    &:hover {
+      color: var(--color-dark);
+    }
+  }
 }
